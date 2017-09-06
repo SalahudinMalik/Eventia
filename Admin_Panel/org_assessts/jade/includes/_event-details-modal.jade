@@ -1,0 +1,39 @@
+#event-details.modal.fade
+		.modal-dialog
+			.modal-content
+				.modal-header.event-detail-modal-header
+					button.close(type="button", data-dismiss="modal")
+						span(aria-hidden="true") &times;
+						span.sr-only Close
+					#event-map
+					
+				.modal-body
+					.event-modal-card
+						.header
+							.image-container
+								img.img-responsive(src="img/events/1.jpg", alt="")
+							.event-title
+								h3 New Test Event
+								h4 Newzealand
+						.modal-sub-card
+							.description
+								h4.modal-sub-head Event Description
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus quos voluptates, iure, omnis doloremque.
+								span.cpd 15
+								span.start-time
+									i.material-icons access_time
+									| 05:00 PM
+								span.end-time
+									i.material-icons access_time
+									| 05:00 PM
+						.modal-sub-card
+								h4.modal-sub-head Event Name
+								p  ABC Event
+						.modal-sub-card
+							
+								h4.modal-sub-head Organised By
+								p  Khurshid
+								
+				.modal-footer
+					button.btn.btn-default(type="button", data-dismiss="modal") Close
+					button.btn.btn-primary(type="button") Save changes

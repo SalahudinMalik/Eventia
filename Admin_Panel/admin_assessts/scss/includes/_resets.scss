@@ -1,0 +1,41 @@
+/*==============================
+=            Resets            =
+==============================*/
+
+.navbar-default {
+    box-shadow: 0 0 5px rgba($dark, 0.5);
+    border-radius: 0;
+    border: none;
+    .navbar-brand {
+        img {
+            margin-top: -15px;
+        }
+    }
+    .navbar-nav {
+        li {
+            a {
+                .icon {
+                    margin-right: 10px;
+                }
+            }
+            &.open {
+                .dropdown-menu {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+h3.card-title {
+    font-size: $medium;
+    font-weight: 700;
+    .icon {
+        float: left;
+        margin-right: 10px;
+        margin-top: -2px;
+    }
+}
+
+
+/*=====  End of Resets  ======*/

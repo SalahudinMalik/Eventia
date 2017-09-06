@@ -1,0 +1,894 @@
+/*=====================================
+=            Base Styling             =
+=====================================*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\000036}}
+body {
+  background-color: #f0f3f4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000310}}
+#content-wrapper {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000315}}
+aside {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000326}}
+aside.toggled {
+  right: 0;
+  overflow-y:scroll;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000330}}
+aside form {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000333}}
+aside .form-group {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000336}}
+aside h3.form-title {
+  margin: 0;
+  font-size: 14px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  color: #c4d0d4;
+  border-left: 2px solid #c4d0d4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000346}}
+aside .form-info-change .form-control.non-edit {
+  pointer-events: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000353}}
+.profile {
+  margin: 20px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000357}}
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: white;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000361}}
+.profile-sidebar #sidebar-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000366}}
+.profile-sidebar #sidebar-close:hover, .profile-sidebar #sidebar-close:focus, .profile-sidebar #sidebar-close:active {
+  color: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000374}}
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000383}}
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000388}}
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\0000395}}
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #9ec636;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003103}}
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003106}}
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003112}}
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003118}}
+.profile-usermenu {
+  margin-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003120}}
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f3f4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003122}}
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003125}}
+.profile-usermenu ul li a {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003130}}
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003134}}
+.profile-usermenu ul li a:hover, .profile-usermenu ul li a:focus, .profile-usermenu ul li a:active {
+  background-color: #fafafa;
+  color: #9ec636;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003142}}
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003144}}
+.profile-usermenu ul li.active a {
+  color: #9ec636;
+  background-color: #f7f7f7;
+  border-left: 2px solid #9ec636;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_base\.scss}line{font-family:\00003157}}
+.profile-content {
+  padding: 20px;
+  background: white;
+  min-height: 100%;
+}
+
+/*=====  End of Base Styling   ======*/
+/*==============================
+=            Resets            =
+==============================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_resets\.scss}line{font-family:\000035}}
+.navbar-default {
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+  border-radius: 0;
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_resets\.scss}line{font-family:\0000310}}
+.navbar-default .navbar-brand img {
+  margin-top: -15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_resets\.scss}line{font-family:\0000317}}
+.navbar-default .navbar-nav li a .icon {
+  margin-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_resets\.scss}line{font-family:\0000322}}
+.navbar-default .navbar-nav li.open .dropdown-menu {
+  margin-top: 12px;
+}
+
+/*----------  Tabs  ----------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_resets\.scss}line{font-family:\0000333}}
+.header.header-custom {
+  padding: 10px !important;
+  color: #333333;
+  box-shadow: 0 0 5px #d9d9d9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_resets\.scss}line{font-family:\0000338}}
+.header.header-custom .nav-tabs > li a {
+  color: #333333 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_resets\.scss}line{font-family:\0000342}}
+.header.header-custom .nav-tabs > li.active a {
+  background-color: #9ec636;
+  color: white !important;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  transition: all 0s;
+}
+
+/*=====  End of Resets  ======*/
+/*===========================================
+=            Application Styling            =
+===========================================*/
+/*----------  Event Cards  ----------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\000038}}
+a {
+  text-decoration: none;
+  color: #9ec636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000311}}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000316}}
+a h1,
+a h2,
+a h3,
+a h4 {
+  color: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000324}}
+.event-card {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000329}}
+.event-card:hover .date-data {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000333}}
+.event-card:hover .date-requested,
+.event-card:hover .date-event {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000338}}
+.event-card:hover .event-image {
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000340}}
+.event-card:hover .event-image img {
+  -webkit-transform: scale(1.3) rotate(7deg);
+  -moz-transform: scale(1.3) rotate(7deg);
+  -ms-transform: scale(1.3) rotate(7deg);
+  -o-transform: scale(1.3) rotate(7deg);
+  transform: scale(1.3) rotate(7deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000346}}
+.event-card .date-data {
+  background: -webkit-linear-gradient(rgba(158, 198, 54, 0.9), #6e8a26) left repeat;
+  background: linear-gradient(rgba(158, 198, 54, 0.9), #6e8a26) left repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000356}}
+.event-card .event-image {
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  overflow: hidden !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000363}}
+.event-card .event-image img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000369}}
+.event-card .cpd {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #9ec636;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100%;
+  color: white;
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000382}}
+.event-card .info-box {
+  padding: 15px;
+  max-height: 250px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000386}}
+.event-card .event-details {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000390}}
+.event-card .event-details h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\0000395}}
+.event-card .event-details h4 {
+  font-size: 14px;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003100}}
+.event-card .date-requested,
+.event-card .date-event {
+  font-size: 14px;
+  position: absolute;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003105}}
+.event-card .date-requested span,
+.event-card .date-event span {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003108}}
+.event-card .date-requested p,
+.event-card .date-event p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003111}}
+.event-card .date-requested i,
+.event-card .date-event i {
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003117}}
+.event-card .date-requested {
+  bottom: 10px;
+  left: 10px;
+  -webkit-transform: translatey(250px);
+  -moz-transform: translatey(250px);
+  -ms-transform: translatey(250px);
+  -o-transform: translatey(250px);
+  transform: translatey(250px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003123}}
+.event-card .date-event {
+  top: 10px;
+  left: 10px;
+  -webkit-transform: translatey(-250px);
+  -moz-transform: translatey(-250px);
+  -ms-transform: translatey(-250px);
+  -o-transform: translatey(-250px);
+  transform: translatey(-250px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003131}}
+.form-group.add-event {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003133}}
+.form-group.add-event.visible {
+  display: block;
+}
+
+/*----------  Event Cards  ----------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003141}}
+.future-event-card {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003146}}
+.future-event-card:hover .date-data {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003150}}
+.future-event-card:hover .date-requested,
+.future-event-card:hover .date-event {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003155}}
+.future-event-card:hover .event-image {
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003157}}
+.future-event-card:hover .event-image img {
+  -webkit-transform: scale(1.3) rotate(7deg);
+  -moz-transform: scale(1.3) rotate(7deg);
+  -ms-transform: scale(1.3) rotate(7deg);
+  -o-transform: scale(1.3) rotate(7deg);
+  transform: scale(1.3) rotate(7deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003163}}
+.future-event-card .date-data {
+  background: -webkit-linear-gradient(rgba(158, 198, 54, 0.9), #6e8a26) left repeat;
+  background: linear-gradient(rgba(158, 198, 54, 0.9), #6e8a26) left repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003173}}
+.future-event-card .event-time {
+  font-size: 11px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003176}}
+.future-event-card .event-time .icon i {
+  font-size: 11px;
+  margin-right: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003182}}
+.future-event-card .event-image {
+  max-width: 250px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003187}}
+.future-event-card .event-image img {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003192}}
+.future-event-card .cpd {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #9ec636;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100%;
+  color: white;
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003205}}
+.future-event-card .info-box {
+  padding: 15px;
+  max-height: 250px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003209}}
+.future-event-card .event-details {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003213}}
+.future-event-card .event-details h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003218}}
+.future-event-card .event-details h4 {
+  font-size: 14px;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003223}}
+.future-event-card .date-requested,
+.future-event-card .date-event {
+  font-size: 14px;
+  position: absolute;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003228}}
+.future-event-card .date-requested span,
+.future-event-card .date-event span {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003231}}
+.future-event-card .date-requested p,
+.future-event-card .date-event p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003234}}
+.future-event-card .date-requested i,
+.future-event-card .date-event i {
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003240}}
+.future-event-card .date-requested {
+  bottom: 10px;
+  left: 10px;
+  -webkit-transform: translatey(250px);
+  -moz-transform: translatey(250px);
+  -ms-transform: translatey(250px);
+  -o-transform: translatey(250px);
+  transform: translatey(250px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003246}}
+.future-event-card .date-event {
+  top: 10px;
+  left: 10px;
+  -webkit-transform: translatey(-250px);
+  -moz-transform: translatey(-250px);
+  -ms-transform: translatey(-250px);
+  -o-transform: translatey(-250px);
+  transform: translatey(-250px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003252}}
+.future-event-card .banner-container {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  top: 0;
+  right: -80px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003260}}
+.future-event-card .banner-container .banner {
+  font-size: 11px;
+  margin-top: 15px;
+  background-color: #9ec636;
+  width: 100%;
+  padding: 0 50px;
+  color: white;
+  text-align: center;
+  text-align: center;
+}
+
+/*----------  User Cards  ----------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003276}}
+.user-card {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003280}}
+.user-card .user-image {
+  max-width: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003285}}
+.user-card .user-image img {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003290}}
+.user-card .info-box {
+  padding: 40px 15px 15px 15px;
+  max-height: 250px;
+  height: 130px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003295}}
+.user-card .user-details {
+  position: relative;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003298}}
+.user-card .user-details h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003303}}
+.user-card .user-details h4 {
+  font-size: 14px;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003308}}
+.user-card .banner-container {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  top: 0;
+  right: -80px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003316}}
+.user-card .banner-container .banner {
+  font-size: 11px;
+  margin-top: 15px;
+  background-color: #9ec636;
+  width: 100%;
+  padding: 0 50px;
+  color: white;
+  text-align: center;
+  text-align: center;
+}
+
+/*----------  Login Page  ----------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003332}}
+#wrapper {
+  padding-top: 250px;
+}
+
+/*----------  Onsite Register  ----------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003339}}
+#arrived,
+#registered {
+  min-height: 500px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003345}}
+.tab-button {
+  position: absolute;
+  bottom: -50px;
+  right: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003351}}
+.modal-backdrop {
+  z-index: -1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003355}}
+.modal.in .modal-dialog {
+  z-index: 300;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003361}}
+.modal .user-card:hover {
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003364}}
+.modal .user-card.selected {
+  background-color: #9ec636;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003372}}
+.event-select-area .form-group {
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003378}}
+.nav-tabs li .btn-report {
+  color: #9ec636 !important;
+  background-color: white !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003381}}
+.nav-tabs li .btn-report:hover, .nav-tabs li .btn-report:focus, .nav-tabs li .btn-report:active {
+  color: #9ec636 !important;
+  background-color: white !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003390}}
+.btn-report {
+  color: #9ec636;
+}
+
+/*----------  Event Detail Modal  ----------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003397}}
+.event-detail-modal-header {
+  padding: 0 !important;
+  overflow: hidden;
+  max-height: 250px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003401}}
+.event-detail-modal-header img {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003405}}
+.event-detail-modal-header .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white !important;
+  border: 1px solid #9ec636;
+  padding: 5px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: #9ec636;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003420}}
+.event-modal-card .header {
+  border: 1px solid #f0f3f4;
+  position: relative;
+  margin-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000320}}
+.event-modal-card .header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003425}}
+.event-modal-card .header h3,
+.event-modal-card .header h4 {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003429}}
+.event-modal-card .header .event-title {
+  padding: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003431}}
+.event-modal-card .header .event-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003435}}
+.event-modal-card .header .event-title h4 {
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003439}}
+.event-modal-card .header .image-container {
+  float: left;
+  width: 150px;
+  margin-right: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003446}}
+.event-modal-card .description p {
+  margin-bottom: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003450}}
+.event-modal-card .modal-sub-card {
+  padding: 15px;
+  border: 1px solid #f0f3f4;
+  position: relative;
+  margin-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003455}}
+.event-modal-card .modal-sub-card .modal-sub-head {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #9ec636;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003462}}
+.event-modal-card .modal-sub-card .cpd {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #9ec636;
+  color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 11px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003475}}
+.event-modal-card .modal-sub-card .start-time {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003479}}
+.event-modal-card .modal-sub-card .start-time i {
+  font-size: 11px;
+  margin-right: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003484}}
+.event-modal-card .modal-sub-card .end-time {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003488}}
+.event-modal-card .modal-sub-card .end-time i {
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Code\/attendo_organiser\/scss\/includes\/_application\.scss}line{font-family:\00003501}}
+  .event-select-area .form-group {
+    max-width: 300px;
+    margin: 1em auto;
+  }
+}
+/*=====  End of Application Styling  ======*/
+
+/*# sourceMappingURL=styles.css.map */

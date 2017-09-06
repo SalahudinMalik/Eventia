@@ -1,0 +1,55 @@
+doctype
+html(lang='en')
+	include includes/_head
+		
+	body
+		include includes/_aside
+		main#content-wrapper
+			header
+				include includes/_nav
+			
+			section#content
+				.container-fluid
+					.row
+						.col-md-6
+							.card
+								.content
+									h3.card-title
+										span.icon
+											i.material-icons list
+										| Add Category
+									.category-list-area
+										ul.organisation-list
+											li Organisation 1
+											li Organisation 2
+											li Organisation 3
+											li Organisation 4
+											li Organisation 5
+										
+											
+						.col-md-6
+							.card
+								.content
+									.card-inner
+										h3.card-title
+											span.icon
+												i.material-icons add_to_photos
+											| Add Category
+										form(action="")
+											.form-group
+												label.control-label(for='addon1') Enter Organisation Name and Press Add Button
+												.input-group
+													span.input-group-addon
+														i.material-icons note_add
+													input#addon1.form-control(type='text' placeholder='Name')
+													span.input-group-btn
+													button.btn.btn-primary.btn-raised(type='button') Add 
+				
+		include includes/_event-details-modal
+		
+
+		include includes/_scripts
+
+
+
+

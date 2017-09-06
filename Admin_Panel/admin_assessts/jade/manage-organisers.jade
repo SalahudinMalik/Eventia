@@ -1,0 +1,92 @@
+doctype
+html(lang='en')
+	include includes/_head
+		
+	body
+		include includes/_aside
+		main#content-wrapper
+			header
+				include includes/_nav
+			
+			section#content
+				.container-fluid
+					.row
+						.col-md-12
+							.card.card-nav-tabs.card-plain
+								.header.header-primary
+									.nav-tabs-navigation
+										.nav-tabs-wrapper
+											ul.nav.nav-tabs(data-tabs='tabs')
+												li.active
+													a(href='#new', data-toggle='tab', aria-expanded='true')
+														i.material-icons fiber_new
+														|New
+												
+												li
+													a(href='#entertained', data-toggle='tab', aria-expanded='false')
+														i.material-icons folder_special
+														|Entertained			
+								.content
+									.tab-content.text-center
+										#new.tab-pane.active
+											.row
+												.col-md-4
+													.card.profile-card
+														a(href="#user-details"  data-toggle="modal")
+															.user-image
+																img.img-responsive(src="img/events/1.jpg", alt="")
+																
+															.user-info
+																.info-box
+																	.user-details
+																		h3 Jane Doe
+																		h4 Organiser
+																		p 123-456789
+												.col-md-4
+													.card.profile-card
+														a(href="#user-details"  data-toggle="modal")
+															.user-image
+																img.img-responsive(src="img/events/2.jpg", alt="")
+																
+															.user-info
+																.info-box
+																	.user-details
+																		h3 John Doe
+																		h4 Organiser
+																		p 123-456789
+
+												
+										#entertained.tab-pane
+											.row
+												.col-md-4
+													.card.profile-card
+														a(href="#user-details"  data-toggle="modal")
+															.user-image
+																img.img-responsive(src="img/events/4.jpg", alt="")
+																
+															.user-info
+																.info-box
+																	.user-details
+																		h3 Jane Doe
+																		h4 Organiser
+																		p 123-456789
+												.col-md-4
+													.card.profile-card
+														a(href="#user-details"  data-toggle="modal")
+															.user-image
+																img.img-responsive(src="img/events/5.jpg", alt="")
+																
+															.user-info
+																.info-box
+																	.user-details
+																		h3 John Doe
+																		h4 Organiser
+																		p 123-456789
+												
+				
+		include includes/_user-details-modal
+		include includes/_scripts
+
+
+
+

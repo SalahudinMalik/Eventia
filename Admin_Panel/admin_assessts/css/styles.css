@@ -1,0 +1,775 @@
+/*=====================================
+=            Base Styling             =
+=====================================*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body {
+  background-color: #f0f3f4;
+}
+
+#content-wrapper {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+aside {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+aside.toggled {
+  right: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+aside form {
+  margin: 0;
+}
+aside .form-group {
+  margin: 0;
+}
+aside h3.form-title {
+  margin: 0;
+  font-size: 14px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  color: #c4d0d4;
+  border-left: 2px solid #c4d0d4;
+}
+
+.profile {
+  margin: 20px 0;
+}
+
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: white;
+  position: relative;
+}
+.profile-sidebar #sidebar-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333333;
+}
+.profile-sidebar #sidebar-close:hover, .profile-sidebar #sidebar-close:focus, .profile-sidebar #sidebar-close:active {
+  color: #333333;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #9ec636;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+
+.profile-usermenu {
+  margin-top: 30px;
+}
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f3f4;
+}
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+.profile-usermenu ul li a {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+.profile-usermenu ul li a:hover, .profile-usermenu ul li a:focus, .profile-usermenu ul li a:active {
+  background-color: #fafafa;
+  color: #9ec636;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+.profile-usermenu ul li.active a {
+  color: #9ec636;
+  background-color: #f7f7f7;
+  border-left: 2px solid #9ec636;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: white;
+  min-height: 100%;
+}
+
+/*=====  End of Base Styling   ======*/
+/*==============================
+=            Resets            =
+==============================*/
+.navbar-default {
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+  border-radius: 0;
+  border: none;
+}
+.navbar-default .navbar-brand img {
+  margin-top: -15px;
+}
+.navbar-default .navbar-nav li a .icon {
+  margin-right: 10px;
+}
+.navbar-default .navbar-nav li.open .dropdown-menu {
+  margin-top: 12px;
+}
+
+h3.card-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+h3.card-title .icon {
+  float: left;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+
+/*=====  End of Resets  ======*/
+/*===========================================
+=            Application Styling            =
+===========================================*/
+/*----------  Event Cards  ----------*/
+a {
+  text-decoration: none;
+  color: #9ec636;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+a h1,
+a h2,
+a h3,
+a h4 {
+  color: #333333;
+}
+
+.event-card {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.event-card:hover .date-data {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.event-card:hover .date-requested,
+.event-card:hover .date-event {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.event-card:hover .event-image {
+  overflow: hidden;
+}
+.event-card:hover .event-image img {
+  -webkit-transform: scale(1.3) rotate(7deg);
+  -moz-transform: scale(1.3) rotate(7deg);
+  -ms-transform: scale(1.3) rotate(7deg);
+  -o-transform: scale(1.3) rotate(7deg);
+  transform: scale(1.3) rotate(7deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.event-card .date-data {
+  background: -webkit-linear-gradient(rgba(158, 198, 54, 0.9), #6e8a26) left repeat;
+  background: linear-gradient(rgba(158, 198, 54, 0.9), #6e8a26) left repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.event-card .event-image {
+  width: 250px;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.event-card .event-image img {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.event-card .cpd {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #9ec636;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100%;
+  color: white;
+  font-weight: 700;
+}
+.event-card .info-box {
+  padding: 15px;
+  max-height: 250px;
+}
+.event-card .event-details {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+.event-card .event-details h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.event-card .event-details h4 {
+  font-size: 14px;
+  margin: 0;
+}
+.event-card .date-requested,
+.event-card .date-event {
+  font-size: 14px;
+  position: absolute;
+  color: white;
+}
+.event-card .date-requested span,
+.event-card .date-event span {
+  display: block;
+}
+.event-card .date-requested p,
+.event-card .date-event p {
+  margin: 0;
+}
+.event-card .date-requested i,
+.event-card .date-event i {
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+.event-card .date-requested {
+  bottom: 10px;
+  left: 10px;
+  -webkit-transform: translatey(250px);
+  -moz-transform: translatey(250px);
+  -ms-transform: translatey(250px);
+  -o-transform: translatey(250px);
+  transform: translatey(250px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.event-card .date-event {
+  top: 10px;
+  left: 10px;
+  -webkit-transform: translatey(-250px);
+  -moz-transform: translatey(-250px);
+  -ms-transform: translatey(-250px);
+  -o-transform: translatey(-250px);
+  transform: translatey(-250px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+
+/*----------  Event Cards  ----------*/
+.future-event-card {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.future-event-card:hover .date-data {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.future-event-card:hover .date-requested,
+.future-event-card:hover .date-event {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.future-event-card:hover .event-image {
+  overflow: hidden;
+}
+.future-event-card:hover .event-image img {
+  -webkit-transform: scale(1.3) rotate(7deg);
+  -moz-transform: scale(1.3) rotate(7deg);
+  -ms-transform: scale(1.3) rotate(7deg);
+  -o-transform: scale(1.3) rotate(7deg);
+  transform: scale(1.3) rotate(7deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.future-event-card .date-data {
+  background: -webkit-linear-gradient(rgba(158, 198, 54, 0.9), #6e8a26) left repeat;
+  background: linear-gradient(rgba(158, 198, 54, 0.9), #6e8a26) left repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.future-event-card .event-time {
+  font-size: 11px;
+}
+.future-event-card .event-time .icon i {
+  font-size: 11px;
+  margin-right: 5px;
+}
+.future-event-card .event-image {
+  max-width: 250px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.future-event-card .event-image img {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.future-event-card .cpd {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #9ec636;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100%;
+  color: white;
+  font-weight: 700;
+}
+.future-event-card .info-box {
+  padding: 15px;
+  max-height: 250px;
+}
+.future-event-card .event-details {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+}
+.future-event-card .event-details h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.future-event-card .event-details h4 {
+  font-size: 14px;
+  margin: 0;
+}
+.future-event-card .date-requested,
+.future-event-card .date-event {
+  font-size: 14px;
+  position: absolute;
+  color: white;
+}
+.future-event-card .date-requested span,
+.future-event-card .date-event span {
+  display: block;
+}
+.future-event-card .date-requested p,
+.future-event-card .date-event p {
+  margin: 0;
+}
+.future-event-card .date-requested i,
+.future-event-card .date-event i {
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+.future-event-card .date-requested {
+  bottom: 10px;
+  left: 10px;
+  -webkit-transform: translatey(250px);
+  -moz-transform: translatey(250px);
+  -ms-transform: translatey(250px);
+  -o-transform: translatey(250px);
+  transform: translatey(250px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.future-event-card .date-event {
+  top: 10px;
+  left: 10px;
+  -webkit-transform: translatey(-250px);
+  -moz-transform: translatey(-250px);
+  -ms-transform: translatey(-250px);
+  -o-transform: translatey(-250px);
+  transform: translatey(-250px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.future-event-card .banner-container {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  top: 0;
+  right: -80px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.future-event-card .banner-container .banner {
+  font-size: 11px;
+  margin-top: 15px;
+  background-color: #9ec636;
+  width: 100%;
+  padding: 0 50px;
+  color: white;
+  text-align: center;
+  text-align: center;
+}
+
+/*----------  User Cards  ----------*/
+.user-card {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.user-card .user-image {
+  max-width: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.user-card .user-image img {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.user-card .info-box {
+  padding: 40px 15px 15px 15px;
+  max-height: 250px;
+  height: 130px;
+  text-align: center;
+}
+.user-card .user-details {
+  position: relative;
+  text-align: center;
+}
+.user-card .user-details h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.user-card .user-details h4 {
+  font-size: 14px;
+  margin: 0;
+}
+.user-card .banner-container {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  top: 0;
+  right: -80px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.user-card .banner-container .banner {
+  font-size: 11px;
+  margin-top: 15px;
+  background-color: #9ec636;
+  width: 100%;
+  padding: 0 50px;
+  color: white;
+  text-align: center;
+  text-align: center;
+}
+
+/*----------  Login Page  ----------*/
+#wrapper {
+  padding-top: 250px;
+}
+
+/*----------  Onsite Register  ----------*/
+#arrived,
+#registered {
+  min-height: 500px;
+  position: relative;
+}
+
+.tab-button {
+  position: absolute;
+  bottom: -50px;
+  right: 20px;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+.modal.in .modal-dialog {
+  z-index: 300;
+}
+
+.modal .user-card:hover {
+  cursor: pointer;
+}
+.modal .user-card.selected {
+  background-color: #9ec636;
+  color: white;
+}
+
+.event-select-area .form-group {
+  margin-top: 0;
+}
+
+.nav-tabs li .btn-report {
+  color: #9ec636 !important;
+  background-color: white !important;
+}
+.nav-tabs li .btn-report:hover, .nav-tabs li .btn-report:focus, .nav-tabs li .btn-report:active {
+  color: #9ec636 !important;
+  background-color: white !important;
+}
+
+.btn-report {
+  color: #9ec636;
+}
+
+/*----------  Event Detail Modal  ----------*/
+.event-detail-modal-header {
+  padding: 0 !important;
+  overflow: hidden;
+  max-height: 250px;
+  position: relative;
+}
+.event-detail-modal-header img {
+  width: 100%;
+}
+.event-detail-modal-header .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white !important;
+  border: 1px solid #9ec636;
+  padding: 5px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: #9ec636;
+}
+
+/*----------  Profile Card  ----------*/
+.profile-card .user-image {
+  width: 200px;
+  float: left;
+  margin-right: 25px;
+}
+.profile-card .user-details {
+  padding-top: 30px;
+}
+.profile-card .user-details h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.profile-card .user-details h4 {
+  font-size: 16px;
+}
+.profile-card .user-details h3,
+.profile-card .user-details h4 {
+  margin: 0;
+}
+
+.event-modal-card .header {
+  border: 1px solid #f0f3f4;
+  position: relative;
+  margin-bottom: 15px;
+}
+.event-modal-card .header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.event-modal-card .header h3,
+.event-modal-card .header h4 {
+  margin: 0;
+}
+.event-modal-card .header .event-title {
+  padding: 25px;
+}
+.event-modal-card .header .event-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.event-modal-card .header .event-title h4 {
+  font-size: 14px;
+}
+.event-modal-card .header .image-container {
+  float: left;
+  width: 150px;
+  margin-right: 15px;
+}
+.event-modal-card .modal-sub-card {
+  padding: 15px;
+  border: 1px solid #f0f3f4;
+  position: relative;
+  margin-bottom: 15px;
+}
+.event-modal-card .modal-sub-card .modal-sub-head {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #9ec636;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.event-modal-card .modal-sub-card .cpd {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #9ec636;
+  color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 11px;
+}
+.event-modal-card .modal-sub-card .start-time {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+.event-modal-card .modal-sub-card .start-time i {
+  font-size: 11px;
+  margin-right: 5px;
+}
+.event-modal-card .modal-sub-card .end-time {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.event-modal-card .modal-sub-card .end-time i {
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) {
+  .event-select-area .form-group {
+    max-width: 300px;
+    margin: 1em auto;
+  }
+}
+/*=====  End of Application Styling  ======*/
+
+/*# sourceMappingURL=styles.css.map */

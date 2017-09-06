@@ -1,0 +1,86 @@
+aside
+  .aside-content.default-skin
+    .profile-sidebar
+      
+      .profile-userpic
+        img.img-responsive(src='img/profile_user.jpg', alt='')
+      
+      .profile-usertitle
+        .profile-usertitle-name
+          | John Doe
+        .profile-usertitle-job
+          | Attendo Inc.
+      .profile-usermenu
+        //- ul.nav
+        //-   li.active: a(href="index.html")
+        //-     span.icon
+        //-       i.material-icons update
+        //-     | Home
+        //-   li: a(href="#")#toggle-password
+        //-     span.icon
+        //-       i.material-icons lock
+        //-     | Change Password
+        //-   li: a(href="#")#toggle-update-info 
+        //-     span.icon
+        //-       i.material-icons account_box
+        //-     | Update Info
+        //-   li: a(href="login.html") 
+        //-     span.icon
+        //-       i.material-icons subdirectory_arrow_left
+        //-     |Logout
+        .form-info-change
+          h3.form-title Update Info
+          form(action="")
+            .form-group
+              .input-group
+                span.input-group-addon
+                  i.material-icons account_circle
+                input.form-control(type='text', placeholder='First Name' value='John')
+                span.material-icons.form-control-feedback clear
+                
+              
+            .form-group
+              .input-group
+                span.input-group-addon
+                  i.material-icons account_circle
+                input.form-control(type='text', placeholder='Last Name' value='Doe')
+                span.material-icons.form-control-feedback clear
+            .form-group
+              .input-group
+                span.input-group-addon
+                  i.material-icons format_list_numbered
+                input.form-control(type='text', placeholder='Member Number' value='257')
+                span.material-icons.form-control-feedback clear
+            .form-group
+              .input-group
+                span.input-group-addon
+                  i.material-icons monetization_on
+                input.form-control(type='text', placeholder='Job Title' value='Organiser')
+                span.material-icons.form-control-feedback clear
+            .form-group
+              .input-group
+                span.input-group-addon
+                  i.material-icons map
+                input.form-control(type='text', placeholder='Address' value='1, ABC , NY')
+                span.material-icons.form-control-feedback clear
+            .form-group
+              .input-group
+                span.input-group-addon
+                  i.material-icons business
+                input.form-control(type='text', placeholder='Organisation' value='Attendo')
+                span.material-icons.form-control-feedback clear
+            .form-group
+              .input-group
+                span.input-group-addon
+                  i.material-icons phone
+                input.form-control(type='text', placeholder='Phone' value='123-456-789')
+                span.material-icons.form-control-feedback clear
+            .footer
+              button.btn.btn-primary.btn-block.text-center#edit-button(type="submit") Edit Profile
+        
+      a#sidebar-close(href="")
+        span.material-icons close
+    
+  
+
+  

@@ -1,0 +1,112 @@
+#create-event-modal.modal.fade
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(type="button", data-dismiss="modal")
+						span(aria-hidden="true") &times;
+						span.sr-only Close
+					h4.modal-title Create Next Event
+				.modal-body
+					form(action="")
+						.row
+							.col-md-12
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons add_a_photo
+										input#inputFile3(type='file', multiple='')
+										input.form-control(type='text', readonly='', placeholder='Event Image')
+										span.material-icons.form-control-feedback clear
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons description
+										input.form-control(type='text', placeholder='Event Name')
+										span.material-icons.form-control-feedback clear
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons event
+										select(name="").form-control
+											option(value="") Select Event Category
+											option(value="") Private
+											option(value="") Public
+										span.material-icons.form-control-feedback clear	
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons event
+										select(name="").form-control
+											option(value="") Select Event type
+											option(value="") Type 1
+											option(value="") Type 2
+											option(value="") Type 3
+											option(value="") Type 4
+											option(value="") Type 5
+											option(value="") Type 6
+											option(value="") Type 7
+										span.input-group-btn
+											button.btn.btn-primary.btn-raised#add-event-type(type='button') Add 
+								.form-group.add-event
+									.input-group
+										span.input-group-addon
+											i.material-icons info
+										input.form-control(type="text", placeholder="Event Type Name")
+											
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons location_on
+										input.form-control(type='text', placeholder='Location')
+										span.material-icons.form-control-feedback clear
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons date_range
+										input#datepicker.form-control(type='text' placeholder='Event Date')
+										
+										span.material-icons.form-control-feedback clear
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons star
+										input.form-control(type='text', placeholder='CPD Points')
+										span.material-icons.form-control-feedback clear
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons supervisor_account
+										input.form-control(type='text', placeholder='Estimated Guests')
+										span.material-icons.form-control-feedback clear
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons laptop_chromebook
+										input.form-control(type='text', placeholder='Web URL')
+										span.material-icons.form-control-feedback clear
+								
+								.row
+									.col-md-6
+										.form-group
+											.input-group
+												span.input-group-addon
+													i.material-icons access_time
+												input#time.form-control(type='text', placeholder='Start Time')
+												span.material-icons.form-control-feedback clear
+									.col-md-6
+										.form-group
+											.input-group
+												span.input-group-addon
+													i.material-icons access_time
+												input#time.form-control(type='text', placeholder='End Time')
+												span.material-icons.form-control-feedback clear
+								.form-group
+									.input-group
+										span.input-group-addon
+											i.material-icons assignment
+										textarea.form-control(name="", cols="30", rows="10" placeholder='Event Description')
+										span.material-icons.form-control-feedback clear
+
+								.footer.text-center
+									button(type='submit').btn.btn-primary.btn-block.text-center.btn-raised.btn-lg Register Event
+				

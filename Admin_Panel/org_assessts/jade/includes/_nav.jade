@@ -1,0 +1,48 @@
+nav(role="navigation").navbar.navbar-default
+	
+	.navbar-header
+		button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+			span.sr-only Toggle navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		a(href="#" ).navbar-brand
+			img.img-responsive(src="img/logo.png", alt="")
+	.collapse.navbar-collapse.navbar-ex1-collapse
+		ul.nav.navbar-nav 
+			li.active: a(href="index.html")
+				span.icon
+					i.material-icons update
+				|Event Awaiting Setup
+			li.dropdown
+				a.dropdown-toggle(href="#", data-toggle="dropdown",role="button", aria-expanded="false")
+					| Events 
+					span.caret
+				ul.dropdown-menu(role="menu")
+					li: a(href="future-events.html") 
+						span.icon
+							i.material-icons add_alarm
+						|Future Events
+					li: a(href="past-events.html") 
+						span.icon
+							i.material-icons done_all
+						|Past Events
+					li: a(href="all-events.html") 
+						span.icon
+							i.material-icons filter_list
+						|All Events
+			li: a(href="onsite-register.html") 
+				span.icon
+					i.material-icons person_add
+				|Onsite Register
+			li: a(href="#create-event-modal" data-toggle="modal" ) 
+				span.icon
+					i.material-icons playlist_add
+				| Create Event
+		
+		ul.nav.navbar-nav.navbar-right
+			li: a(href="#")#sidebar-toggle 
+				span.icon
+					i.material-icons account_circle
+				|John Doe
+				i.material-icons menu

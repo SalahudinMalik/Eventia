@@ -1,0 +1,164 @@
+/*=====================================
+=            Base Styling             =
+=====================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body {
+    background-color: $grey;
+}
+
+#content-wrapper {
+    @include transform(translateX(0px));
+    @include transition(all .5s);
+}
+
+aside {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    box-shadow: 0 0 5px rgba($dark, 0.5);
+    height: 100%;
+    background-color: $light;
+    z-index: 1;
+    height: 100%;
+    @include transition(all .5s);
+    &.toggled {
+        right: 0;
+        @include transition(all .5s);
+    }
+    form {
+        margin: 0;
+    }
+    .form-group {
+        margin: 0;
+    }
+    h3.form-title {
+        margin: 0;
+        font-size: $small;
+        padding: 5px 15px;
+        text-transform: uppercase;
+        color: darken($grey, 15%);
+        border-left: 2px solid darken($grey, 15%);
+    }
+    .form-info-change {
+        .form-control {
+            &.non-edit {
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.profile {
+    margin: 20px 0;
+}
+
+.profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: $light;
+    position: relative;
+    #sidebar-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: $dark;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $dark;
+        }
+    }
+}
+
+.profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    @include border-top-radius(50%);
+    @include border-bottom-radius(50%);
+}
+
+.profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+    text-transform: uppercase;
+    color: $primary;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+    .btn {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 6px 15px;
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.profile-usermenu {
+    margin-top: 30px;
+    ul li {
+        border-bottom: 1px solid $grey;
+        &:last-child {
+            border-bottom: none;
+        }
+        a {
+            color: darken($light, 35%);
+            font-size: 14px;
+            font-weight: 400;
+            @include transition(all .5s);
+            i {
+                margin-right: 8px;
+                font-size: 14px;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: darken($light, 2%);
+                color: $primary;
+                @include transition(all .5s);
+            }
+        }
+        &.active {
+            border-bottom: none;
+            a {
+                color: $primary;
+                background-color: darken($light, 3%);
+                border-left: 2px solid $primary;
+                margin-left: -2px;
+            }
+        }
+    }
+}
+
+
+/* Profile Content */
+
+.profile-content {
+    padding: 20px;
+    background: $light;
+    min-height: 100%;
+}
+
+
+/*=====  End of Base Styling   ======*/

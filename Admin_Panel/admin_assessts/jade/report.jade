@@ -1,0 +1,55 @@
+doctype
+html(lang='en')
+	include includes/_head
+		
+	body
+		include includes/_aside
+		main#content-wrapper
+			header
+				include includes/_nav
+			
+			section#content
+				.container-fluid
+					.content
+							.row
+								.col-md-3.col-md-offset-3
+									.input-group
+										span.input-group-addon
+											i.material-icons event
+										
+										select.form-control(name="")
+											option(value="") Select Organiser
+											option(value="") John Doe
+											option(value="") Sarah Conner
+											option(value="") Luke 
+											option(value="") Jane Doe
+								.col-md-3
+									.input-group
+										span.input-group-addon
+											i.material-icons search
+										input#addon1.form-control(type='text' placeholder='Search Event by Name')
+										span.input-group-btn
+										button.btn.btn-primary.btn-raised(type='button') Search 
+					.row
+						.col-md-4
+							.card.profile-card
+								a(href="#user-details"  data-toggle="modal")
+									.user-image
+										img.img-responsive(src="img/events/1.jpg", alt="")
+										
+									.user-info
+										.info-box
+											.user-details
+												h3 Jane Doe
+												h4 Organiser
+												p 123-456789		
+											
+				
+		include includes/_user-details-modal
+		
+
+		include includes/_scripts
+
+
+
+

@@ -1,0 +1,30 @@
+#user-details.modal.fade
+	.modal-dialog
+		.modal-content
+			.modal-header.event-detail-modal-header
+				button.close(type="button", data-dismiss="modal")
+					span(aria-hidden="true") &times;
+					span.sr-only Close
+				#event-map
+				
+			.modal-body
+				.event-modal-card
+					.header
+						.image-container
+							img.img-responsive(src="img/events/1.jpg", alt="")
+						.event-title
+							h3 John
+							h4 Newzealand
+					.modal-sub-card
+						.description
+							h4.modal-sub-head Occupation
+							p  Web Developer
+					.modal-sub-card
+							h4.modal-sub-head Registration Date
+							p  04:45:55 09-02-2016
+					.modal-sub-card
+							h4.modal-sub-head Email
+							p  john@doe.com
+							
+			.modal-footer
+				button.btn.btn-primary(type="button") Accept

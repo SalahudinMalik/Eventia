@@ -1,0 +1,302 @@
+doctype
+html(lang='en')
+	include includes/_head
+		
+	body
+		include includes/_aside
+		main#content-wrapper
+			header
+				include includes/_nav
+			
+			section#content
+				.container-fluid
+					.row
+						.col-md-12
+							.card.card-nav-tabs.card-plain
+								.header.header-primary
+									.nav-tabs-navigation
+										.nav-tabs-wrapper
+											ul.nav.nav-tabs(data-tabs='tabs')
+												li.active
+													a(href='#new', data-toggle='tab', aria-expanded='true')
+														i.material-icons fiber_new
+														|New
+												
+												li
+													a(href='#entertained', data-toggle='tab', aria-expanded='false')
+														i.material-icons folder_special
+														|Entertained
+												
+														
+
+												
+												
+												
+								.content
+									.tab-content.text-center
+										#new.tab-pane.active
+											.row
+												.col-md-4
+													.card.event-card
+														a(href="#event-details"  data-toggle="modal")
+															.event-image
+																img.img-responsive(src="img/events/1.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 25
+																	
+																	.event-details
+																		h3 Hospitality Event
+																		h4 NewZealand
+												.col-md-4
+													.card.event-card
+														a(href="#event-details" data-toggle='modal')
+															.event-image
+																img.img-responsive(src="img/events/2.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 25
+																	
+																	.event-details
+																		h3 Art Event
+																		h4 NewZealand									
+												.col-md-4
+													.card.event-card
+														a(href="#event-details" data-toggle='modal')
+															.event-image
+																img.img-responsive(src="img/events/4.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 33
+																	
+																	.event-details
+																		h3 Hackathon
+																		h4 Auckland
+												.col-md-4
+													.card.event-card
+														a(href="#event-details" data-toggle='modal')
+															.event-image
+																img.img-responsive(src="img/events/5.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 25
+																	
+																	.event-details
+																		h3 News Reading 
+																		h4 NewZealand
+												.col-md-4
+													.card.event-card
+														a(href="#event-details" data-toggle='modal')
+															.event-image
+																img.img-responsive(src="img/events/6.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 78
+																	
+																	.event-details
+																		h3 Application Developers Gathering
+																		h4 NewZealand	
+												.col-md-4
+													.card.event-card
+														a(href="#event-details" data-toggle='modal')
+															.event-image
+																img.img-responsive(src="img/events/8.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 45
+																	
+																	.event-details
+																		h3 Room Decoration 
+																		h4 NewZealand		
+														
+												.col-md-4
+													.card.event-card
+														a(href="#event-details" data-toggle='modal')
+															.event-image
+																img.img-responsive(src="img/events/9.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 14
+																	
+																	.event-details
+																		h3 Art & Graphics
+																		h4 NewZealand							
+										#entertained.tab-pane
+											.row
+												.col-md-4
+													.card.event-card
+														a(href="#event-details" data-toggle='modal')
+															.event-image
+																img.img-responsive(src="img/events/2.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 25
+																	
+																	.event-details
+																		h3 Art Event
+																		h4 NewZealand									
+												.col-md-4
+													.card.event-card
+														a(href="#event-details" data-toggle='modal')
+															.event-image
+																img.img-responsive(src="img/events/4.jpg", alt="")
+																.date-data
+																	.date-requested
+																		.event-date
+																			p
+																				| Event Date
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+																	.date-event
+																		.event-date
+																			p
+																				| Requested
+																				span
+																					i.material-icons event_note
+																					| 25 Jan, 2016
+															.event-info
+																
+																.info-box
+																	span.cpd 33
+																	
+																	.event-details
+																		h3 Hackathon
+																		h4 Auckland
+				
+			include includes/_event-details-modal
+		
+
+		include includes/_scripts
+
+
+
+

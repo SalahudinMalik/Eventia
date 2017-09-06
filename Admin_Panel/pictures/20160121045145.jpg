@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /attendo_events/api/event</title>
+ </head>
+ <body>
+<h1>Index of /attendo_events/api/event</h1>
+<ul><li><a href="/attendo_events/api/"> Parent Directory</a></li>
+<li><a href="add_event.php"> add_event.php</a></li>
+<li><a href="add_event_type.php"> add_event_type.php</a></li>
+<li><a href="add_organization.php"> add_organization.php</a></li>
+<li><a href="add_organizer.php"> add_organizer.php</a></li>
+<li><a href="admin_org_pending.php"> admin_org_pending.php</a></li>
+<li><a href="attendance.php"> attendance.php</a></li>
+<li><a href="change_pwd.php"> change_pwd.php</a></li>
+<li><a href="close9.png"> close9.png</a></li>
+<li><a href="delete_event.php"> delete_event.php</a></li>
+<li><a href="delete_organization.php"> delete_organization.php</a></li>
+<li><a href="edit_event.php"> edit_event.php</a></li>
+<li><a href="forgot_pwd.php"> forgot_pwd.php</a></li>
+<li><a href="generate_qr.php"> generate_qr.php</a></li>
+<li><a href="get_admin_events.php"> get_admin_events.php</a></li>
+<li><a href="get_attended_events.php"> get_attended_events.php</a></li>
+<li><a href="get_event.php"> get_event.php</a></li>
+<li><a href="get_event_report.php"> get_event_report.php</a></li>
+<li><a href="get_event_types.php"> get_event_types.php</a></li>
+<li><a href="get_events_report.php"> get_events_report.php</a></li>
+<li><a href="get_guest_profile.php"> get_guest_profile.php</a></li>
+<li><a href="get_joining_guests.php"> get_joining_guests.php</a></li>
+<li><a href="get_org_events.php"> get_org_events.php</a></li>
+<li><a href="get_org_guests_report.php"> get_org_guests_report.php</a></li>
+<li><a href="get_organizations.php"> get_organizations.php</a></li>
+<li><a href="get_organizers.php"> get_organizers.php</a></li>
+<li><a href="get_upcoming_events.php"> get_upcoming_events.php</a></li>
+<li><a href="includes/"> includes/</a></li>
+<li><a href="logout.php"> logout.php</a></li>
+<li><a href="pdfs/"> pdfs/</a></li>
+<li><a href="pictures/"> pictures/</a></li>
+<li><a href="register.php"> register.php</a></li>
+<li><a href="register_and_attendance.php"> register_and_attendance.php</a></li>
+<li><a href="rp_events.php"> rp_events.php</a></li>
+<li><a href="scanner_qr.php"> scanner_qr.php</a></li>
+<li><a href="send_pdf.php"> send_pdf.php</a></li>
+<li><a href="sendpushnotification.php"> sendpushnotification.php</a></li>
+<li><a href="signin.php"> signin.php</a></li>
+<li><a href="test.php"> test.php</a></li>
+<li><a href="update_attendance.php"> update_attendance.php</a></li>
+<li><a href="update_guest_profile.php"> update_guest_profile.php</a></li>
+<li><a href="update_organization.php"> update_organization.php</a></li>
+<li><a href="update_organizer_status.php"> update_organizer_status.php</a></li>
+</ul>
+</body></html>

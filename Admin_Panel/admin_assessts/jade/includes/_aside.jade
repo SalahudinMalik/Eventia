@@ -1,0 +1,104 @@
+aside
+  .aside-content.default-skin
+    .profile-sidebar
+      
+      .profile-userpic
+        img.img-responsive(src='img/profile_user.jpg', alt='')
+      
+      .profile-usertitle
+        .profile-usertitle-name
+          | John Doe
+        .profile-usertitle-job
+          | Attendo Inc.
+      //- .profile-usermenu
+      //-   ul.nav
+      //-     li.active: a(href="index.html")
+      //-       span.icon
+      //-         i.material-icons update
+      //-       | Home
+      //-     li: a(href="#")#toggle-password
+      //-       span.icon
+      //-         i.material-icons lock
+      //-       | Change Password
+      //-     li: a(href="#")#toggle-update-info 
+      //-       span.icon
+      //-         i.material-icons account_box
+      //-       | Update Info
+      //-     li: a(href="login.html") 
+      //-       span.icon
+      //-         i.material-icons subdirectory_arrow_left
+      //-       |Logout
+      .form-info-change
+        h3.form-title Update Info
+        form(action="")
+          .form-group
+            .input-group
+              span.input-group-addon
+                i.material-icons add_a_photo
+              input#inputFile3(type='file', multiple='')
+              input.form-control(type='text', readonly='', placeholder='Upload Image')
+              span.material-icons.form-control-feedback clear
+              
+          .form-group
+            .input-group
+              span.input-group-addon
+                i.material-icons account_circle
+              input.form-control(type='text', placeholder='First Name')
+              span.material-icons.form-control-feedback clear
+              
+            
+          .form-group
+            .input-group
+              span.input-group-addon
+                i.material-icons account_circle
+              input.form-control(type='text', placeholder='Last Name')
+              span.material-icons.form-control-feedback clear
+          .form-group
+            .input-group
+              span.input-group-addon
+                i.material-icons email
+              input.form-control(type='text', placeholder='Email')
+              span.material-icons.form-control-feedback clear
+          .form-group
+            .input-group
+              span.input-group-addon
+                i.material-icons business
+              input.form-control(type='text', placeholder='Organisation')
+              span.material-icons.form-control-feedback clear
+          .form-group
+            .input-group
+              span.input-group-addon
+                i.material-icons phone
+              input.form-control(type='text', placeholder='Phone')
+              span.material-icons.form-control-feedback clear
+          .footer
+            button.btn.btn-primary.btn-block.text-center(type="submit") Update Info
+      //- .form-password
+      //-   h3.form-title Update Password
+      //-   form(action="")
+      //-     .form-group
+      //-       .input-group
+      //-         span.input-group-addon
+      //-           i.material-icons lock_outline
+      //-         input.form-control(type='text', placeholder='Current Password')
+      //-         span.material-icons.form-control-feedback clear
+      //-     .form-group
+      //-       .input-group
+      //-         span.input-group-addon
+      //-           i.material-icons lock_outline
+      //-         input.form-control(type='text', placeholder='New Password')
+      //-         span.material-icons.form-control-feedback clear
+      //-     .form-group
+      //-       .input-group
+      //-         span.input-group-addon
+      //-           i.material-icons lock_outline
+      //-         input.form-control(type='text', placeholder='Repeat Password')
+      //-         span.material-icons.form-control-feedback clear
+      //-     .footer
+      //-       a.btn.btn-block_outline.btn-primary.btn-block.text-center(href="") Change Password
+      a#sidebar-close(href="")
+        span.material-icons close
+    
+  
+
+  

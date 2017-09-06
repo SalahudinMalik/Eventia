@@ -1,0 +1,195 @@
+doctype
+html(lang='en')
+	include includes/_head
+		
+	body
+		include includes/_aside
+		main#content-wrapper
+			header
+				include includes/_nav
+			
+			section#content
+				.container-fluid
+					.row
+						.col-md-12
+							.card.card-nav-tabs.card-plain
+								.header.header-custom
+									.nav-tabs-navigation
+										.nav-tabs-wrapper
+											ul.nav.nav-tabs(data-tabs='tabs')
+												li.active
+													a(href='#arrived', data-toggle='tab', aria-expanded='true')
+														i.material-icons timeline
+														|Arrived
+												
+												li
+													a(href='#registered', data-toggle='tab', aria-expanded='false')
+														i.material-icons toll
+														|Registered
+												
+												li.pull-right
+													.event-select-area
+														form(action="")
+															select.form-control(name="")
+																option(value="") Select Event
+																option(value="") Event 1
+																option(value="") Event 2
+																option(value="") Event 3
+																option(value="") Event 4
+																option(value="") Event 5
+														
+
+												
+												
+												
+								.content
+									.tab-content.text-center
+										#arrived.tab-pane.active
+											.row
+												
+												.col-md-4
+													.card.user-card
+														.user-image
+															img.img-responsive(src="img/events/1.jpg", alt="")
+														.user-info
+															
+															.info-box
+																.user-details
+																	h3 Sarah Conner
+																	h4 sarah@terminator.com
+																	h4 445-353-333
+												.col-md-4
+													.card.user-card
+														.user-image
+															img.img-responsive(src="img/events/2.jpg", alt="")
+														.user-info
+															.banner-container
+																.banner
+																	span.text Manual
+															.info-box
+																.user-details
+																	h3 User 2
+																	h4 store@book.com
+																	h4 123-353-333
+											.tab-button
+												button(data-toggle="modal", href="#add-guest-modal").btn.btn-primary.btn-raised.btn-round.btn-fab
+													i.material-icons add
+										#registered.tab-pane
+											.row
+												
+												.col-md-4
+													.card.user-card
+														.user-image
+															img.img-responsive(src="img/events/5.jpg", alt="")
+														.user-info
+															.banner-container
+																.banner
+																	span.text Manual
+															.info-box
+																.user-details
+																	h3 Jack the reader
+																	h4 Jack@thenews.com
+																	h4 123-123-333
+				
+					#add-guest-modal.modal.fade
+						.modal-dialog
+							.modal-content
+								.modal-header
+									button.close(type="button", data-dismiss="modal")
+										span(aria-hidden="true") &times;
+										span.sr-only Close
+									h4.modal-title Add Guest
+								.modal-body
+									.card.card-nav-tabs.card-plain
+										.header.header-primary
+											.nav-tabs-navigation
+												.nav-tabs-wrapper
+													ul.nav.nav-tabs(data-tabs='tabs')
+														li.active
+															a(href='#new', data-toggle='tab', aria-expanded='true')
+																i.material-icons timeline
+																|New
+														
+														li
+															a(href='#existing', data-toggle='tab', aria-expanded='false')
+																i.material-icons toll
+																|Existing
+														
+														
+														
+										.content
+											.tab-content.text-center
+												#new.tab-pane.active
+													.row
+														.col-md-12
+															.form-group
+																.input-group
+																	span.input-group-addon
+																		i.material-icons add_a_photo
+																	input#inputFile3(type='file', multiple='')
+																	input.form-control(type='text', readonly='', placeholder='Upload Image')
+																	span.material-icons.form-control-feedback clear
+																	
+															.form-group
+																.input-group
+																	span.input-group-addon
+																		i.material-icons account_circle
+																	input.form-control(type='text', placeholder='First Name')
+																	span.material-icons.form-control-feedback clear
+																	
+																
+															.form-group
+																.input-group
+																	span.input-group-addon
+																		i.material-icons account_circle
+																	input.form-control(type='text', placeholder='Last Name')
+																	span.material-icons.form-control-feedback clear
+															.form-group
+																.input-group
+																	span.input-group-addon
+																		i.material-icons email
+																	input.form-control(type='text', placeholder='Email')
+																	span.material-icons.form-control-feedback clear
+															.form-group
+																.input-group
+																	span.input-group-addon
+																		i.material-icons business
+																	input.form-control(type='text', placeholder='Organisation')
+																	span.material-icons.form-control-feedback clear
+															.form-group
+																.input-group
+																	span.input-group-addon
+																		i.material-icons phone
+																	input.form-control(type='text', placeholder='Phone')
+																	span.material-icons.form-control-feedback clear
+															//- .footer
+															//- 	button(type='submit').btn.btn-primary Save
+													
+												#existing.tab-pane
+													.row
+														.col-md-12
+															.card.user-card
+																.user-image
+																	img.img-responsive(src="img/events/5.jpg", alt="")
+																.user-info
+																	.banner-container
+																		.banner
+																			span.text Manual
+																	.info-box
+																		.user-details
+																			h3 Jack the reader
+																			h4 Jack@thenews.com
+																			h4 123-123-333
+								.modal-footer
+									button.btn.btn-default(type="button", data-dismiss="modal") Close
+									button.btn.btn-primary(type="button") Save changes							
+								
+					
+		include includes/_create-event-modal
+		
+		include includes/_event-details-modal
+		include includes/_scripts
+
+
+
+

@@ -1,0 +1,44 @@
+doctype
+html(lang='en')
+	include includes/_head
+		
+	body
+		#wrapper
+			.container
+				.row
+					.col-md-4.col-md-offset-4.col-sm-offset-3.col-sm-6
+						.card.card-signup
+							form(action="")
+								.header.header-primary.text-center
+									h4 Login
+								p.text-divider Enter Your Credentails Below
+
+								.content
+									.form-group
+										.input-group
+											span.input-group-addon
+												i.material-icons mail
+											input.form-control(type='email', placeholder='Your Email')
+											span.material-icons.form-control-feedback clear
+											
+										
+									.form-group
+										.input-group
+											span.input-group-addon
+												i.material-icons lock_outline
+											input.form-control(type='password', placeholder='Your Password')
+											span.material-icons.form-control-feedback clear
+										
+								
+										
+
+									.footer.text-center
+										a.btn.btn-primary.btn-lg(href="index.html") Get Started
+					
+
+
+		include includes/_scripts
+
+
+
+

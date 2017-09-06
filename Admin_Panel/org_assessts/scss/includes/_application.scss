@@ -1,0 +1,506 @@
+/*===========================================
+=            Application Styling            =
+===========================================*/
+
+
+/*----------  Event Cards  ----------*/
+
+a {
+    text-decoration: none;
+    color: $primary;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: $dark;
+    }
+}
+
+.event-card {
+    max-height: 250px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    &:hover {
+        .date-data {
+            @include transform(translatex(0));
+            @include transition(all .5s);
+        }
+        .date-requested,
+        .date-event {
+            @include transform(translatex(0));
+            @include transition(all 1s);
+        }
+        .event-image {
+            overflow: hidden;
+            img {
+                @include transform(scale(1.3) rotate(7deg));
+                @include transition(all .5s);
+            }
+        }
+    }
+    .date-data {
+        @include background(linear-gradient(rgba($primary, 0.9), darken($primary, 15%)) left repeat);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include transform(translatex(-100%));
+        @include transition(all .5s);
+    }
+    .event-image {
+        max-width: 250px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            @include transition(all .5s);
+        }
+    }
+    .cpd {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: $primary;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 100%;
+        color: $light;
+        font-weight: 700;
+    }
+    .info-box {
+        padding: 15px;
+        max-height: 250px;
+    }
+    .event-details {
+        position: relative;
+        text-align: center;
+        margin-top: 50px;
+        h3 {
+            font-size: $medium;
+            font-weight: 700;
+            margin: 0;
+        }
+        h4 {
+            font-size: $small;
+            margin: 0;
+        }
+    }
+    .date-requested,
+    .date-event {
+        font-size: $small;
+        position: absolute;
+        color: $light;
+        span {
+            display: block;
+        }
+        p {
+            margin: 0;
+        }
+        i {
+            float: left;
+            margin-right: 5px;
+            margin-top: -2px;
+        }
+    }
+    .date-requested {
+        bottom: 10px;
+        left: 10px;
+        @include transform(translatey(250px));
+        @include transition(all 1s);
+    }
+    .date-event {
+        top: 10px;
+        left: 10px;
+        @include transform(translatey(-250px));
+        @include transition(all 1s);
+    }
+}
+
+.form-group.add-event {
+    display: none;
+    &.visible {
+        display: block;
+    }
+}
+
+
+/*----------  Event Cards  ----------*/
+
+.future-event-card {
+    max-height: 250px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    &:hover {
+        .date-data {
+            @include transform(translatex(0));
+            @include transition(all .5s);
+        }
+        .date-requested,
+        .date-event {
+            @include transform(translatex(0));
+            @include transition(all 1s);
+        }
+        .event-image {
+            overflow: hidden;
+            img {
+                @include transform(scale(1.3) rotate(7deg));
+                @include transition(all .5s);
+            }
+        }
+    }
+    .date-data {
+        @include background(linear-gradient(rgba($primary, 0.9), darken($primary, 15%)) left repeat);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include transform(translatex(-100%));
+        @include transition(all .5s);
+    }
+    .event-time {
+        font-size: $x-small;
+        .icon {
+            i {
+                font-size: $x-small;
+                margin-right: 5px;
+            }
+        }
+    }
+    .event-image {
+        max-width: 250px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            @include transition(all .5s);
+        }
+    }
+    .cpd {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: $primary;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 100%;
+        color: $light;
+        font-weight: 700;
+    }
+    .info-box {
+        padding: 15px;
+        max-height: 250px;
+    }
+    .event-details {
+        position: relative;
+        text-align: center;
+        margin-top: 40px;
+        h3 {
+            font-size: $medium;
+            font-weight: 700;
+            margin: 0;
+        }
+        h4 {
+            font-size: $small;
+            margin: 0;
+        }
+    }
+    .date-requested,
+    .date-event {
+        font-size: $small;
+        position: absolute;
+        color: $light;
+        span {
+            display: block;
+        }
+        p {
+            margin: 0;
+        }
+        i {
+            float: left;
+            margin-right: 5px;
+            margin-top: -2px;
+        }
+    }
+    .date-requested {
+        bottom: 10px;
+        left: 10px;
+        @include transform(translatey(250px));
+        @include transition(all 1s);
+    }
+    .date-event {
+        top: 10px;
+        left: 10px;
+        @include transform(translatey(-250px));
+        @include transition(all 1s);
+    }
+    .banner-container {
+        position: absolute;
+        text-align: center;
+        width: 200px;
+        height: 40px;
+        top: 0;
+        right: -80px;
+        @include transform(rotate(45deg));
+        .banner {
+            font-size: $x-small;
+            margin-top: 15px;
+            background-color: $primary;
+            width: 100%;
+            padding: 0 50px;
+            color: $light;
+            text-align: center;
+            text-align: center;
+        }
+    }
+}
+
+
+/*----------  User Cards  ----------*/
+
+.user-card {
+    max-height: 250px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    .user-image {
+        max-width: 200px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            @include transition(all .5s);
+        }
+    }
+    .info-box {
+        padding: 40px 15px 15px 15px;
+        max-height: 250px;
+        height: 130px;
+    }
+    .user-details {
+        position: relative;
+        text-align: center;
+        h3 {
+            font-size: $medium;
+            font-weight: 700;
+            margin: 0;
+        }
+        h4 {
+            font-size: $small;
+            margin: 0;
+        }
+    }
+    .banner-container {
+        position: absolute;
+        text-align: center;
+        width: 200px;
+        height: 40px;
+        top: 0;
+        right: -80px;
+        @include transform(rotate(45deg));
+        .banner {
+            font-size: $x-small;
+            margin-top: 15px;
+            background-color: $primary;
+            width: 100%;
+            padding: 0 50px;
+            color: $light;
+            text-align: center;
+            text-align: center;
+        }
+    }
+}
+
+
+/*----------  Login Page  ----------*/
+
+#wrapper {
+    padding-top: 250px;
+}
+
+
+/*----------  Onsite Register  ----------*/
+
+#arrived,
+#registered {
+    min-height: 500px;
+    position: relative;
+}
+
+.tab-button {
+    position: absolute;
+    bottom: -50px;
+    right: 20px;
+}
+
+.modal-backdrop {
+    z-index: -1;
+}
+
+.modal.in .modal-dialog {
+    z-index: 300;
+}
+
+.modal {
+    .user-card {
+        &:hover {
+            cursor: pointer;
+        }
+        &.selected {
+            background-color: $primary;
+            color: $light;
+        }
+    }
+}
+
+.event-select-area {
+    .form-group {
+        margin-top: 0;
+    }
+}
+
+.nav-tabs li {
+    .btn-report {
+        color: $primary !important;
+        background-color: $light !important;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $primary !important;
+            background-color: $light !important;
+        }
+    }
+}
+
+.btn-report {
+    color: $primary;
+}
+
+
+/*----------  Event Detail Modal  ----------*/
+
+.event-detail-modal-header {
+    padding: 0 !important;
+    overflow: hidden;
+    max-height: 250px;
+    img {
+        width: 100%;
+    }
+    position: relative;
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: $light !important;
+        border: 1px solid $primary;
+        padding: 5px;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        background-color: $primary;
+    }
+}
+
+.event-modal-card {
+    .header {
+        border: 1px solid $grey;
+        position: relative;
+        @include clearfix();
+        margin-bottom: 15px;
+        h3,
+        h4 {
+            margin: 0;
+        }
+        .event-title {
+            padding: 25px;
+            h3 {
+                font-size: $large;
+                font-weight: 700;
+            }
+            h4 {
+                font-size: $small;
+            }
+        }
+        .image-container {
+            float: left;
+            width: 150px;
+            margin-right: 15px;
+        }
+    }
+    .description {
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    .modal-sub-card {
+        padding: 15px;
+        border: 1px solid $grey;
+        position: relative;
+        margin-bottom: 15px;
+        .modal-sub-head {
+            margin: 0;
+            margin-bottom: 5px;
+            color: $primary;
+            text-transform: uppercase;
+            font-size: $small;
+        }
+        .cpd {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: $primary;
+            color: $light;
+            border-radius: 100%;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            font-size: $x-small;
+        }
+        .start-time {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            i {
+                font-size: $x-small;
+                margin-right: 5px;
+            }
+        }
+        .end-time {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            i {
+                font-size: $x-small;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 768px) {
+    .event-select-area {
+        .form-group {
+            max-width: 300px;
+            margin: 1em auto;
+        }
+    }
+}
+
+
+/*=====  End of Application Styling  ======*/

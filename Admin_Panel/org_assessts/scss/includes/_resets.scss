@@ -1,0 +1,52 @@
+/*==============================
+=            Resets            =
+==============================*/
+
+.navbar-default {
+    box-shadow: 0 0 5px rgba($dark, 0.5);
+    border-radius: 0;
+    border: none;
+    .navbar-brand {
+        img {
+            margin-top: -15px;
+        }
+    }
+    .navbar-nav {
+        li {
+            a {
+                .icon {
+                    margin-right: 10px;
+                }
+            }
+            &.open {
+                .dropdown-menu {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+/*----------  Tabs  ----------*/
+
+.header.header-custom {
+    padding: 10px !important;
+    color: $dark;
+    box-shadow: 0 0 5px darken($light, 15%);
+    .nav-tabs > li {
+        a {
+            color: $dark !important;
+        }
+        &.active {
+            a {
+                background-color: $primary;
+                color: $light !important;
+                @include transition( all 0s);
+            }
+        }
+    }
+}
+
+
+/*=====  End of Resets  ======*/

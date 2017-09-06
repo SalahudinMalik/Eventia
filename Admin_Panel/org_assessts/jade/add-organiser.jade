@@ -1,0 +1,70 @@
+doctype
+html(lang='en')
+	include includes/_head
+		
+	body
+		include includes/_aside
+		main#content-wrapper
+			header
+				include includes/_nav
+			
+			section#content
+				.container-fluid
+					.row
+						
+						.col-md-12
+							.card
+								.content
+									form(action="")
+										.row
+											.col-md-12
+												.form-group
+													.input-group
+														span.input-group-addon
+															i.material-icons add_a_photo
+														input#inputFile3(type='file', multiple='')
+														input.form-control(type='text', readonly='', placeholder='Upload Image')
+														span.material-icons.form-control-feedback clear
+														
+												.form-group
+													.input-group
+														span.input-group-addon
+															i.material-icons account_circle
+														input.form-control(type='text', placeholder='First Name')
+														span.material-icons.form-control-feedback clear
+														
+													
+												.form-group
+													.input-group
+														span.input-group-addon
+															i.material-icons account_circle
+														input.form-control(type='text', placeholder='Last Name')
+														span.material-icons.form-control-feedback clear
+												.form-group
+													.input-group
+														span.input-group-addon
+															i.material-icons email
+														input.form-control(type='text', placeholder='Email')
+														span.material-icons.form-control-feedback clear
+												.form-group
+													.input-group
+														span.input-group-addon
+															i.material-icons business
+														input.form-control(type='text', placeholder='Organisation')
+														span.material-icons.form-control-feedback clear
+												.form-group
+													.input-group
+														span.input-group-addon
+															i.material-icons phone
+														input.form-control(type='text', placeholder='Phone')
+														span.material-icons.form-control-feedback clear
+												.footer.text-center
+													button(type='submit').btn.btn-primary.btn-raised.btn-lg Save
+												
+		
+		include includes/_event-details-modal
+		include includes/_scripts
+
+
+
+

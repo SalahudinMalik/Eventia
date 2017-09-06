@@ -1,0 +1,78 @@
+doctype
+html(lang='en')
+	include includes/_head
+		
+	body
+		include includes/_aside
+		main#content-wrapper
+			header
+				include includes/_nav
+			
+			section#content
+				.container-fluid
+					.row
+						.col-md-4
+							.card.future-event-card
+								.event-image
+									img.img-responsive(src="img/events/1.jpg", alt="")
+									.date-data
+										.date-requested
+											.event-date
+												p
+													| Event Date
+													span
+														i.material-icons event_note
+														| 25 Jan, 2016
+										
+								.event-info
+									.banner-container
+										.banner
+											span.text Accepted
+									.info-box
+										span.cpd 25
+										
+										.event-details
+											h3 Hospitality Event
+											h4 NewZealand
+											.event-time
+												span.icon 
+													i.material-icons access_time 
+												| 05:00 PM
+						.col-md-4
+							.card.future-event-card
+								.event-image
+									img.img-responsive(src="img/events/5.jpg", alt="")
+									.date-data
+										.date-requested
+											.event-date
+												p
+													| Event Date
+													span
+														i.material-icons event_note
+														| 25 Jan, 2016
+										
+								.event-info
+									.banner-container
+										.banner
+											span.text Accepted
+									.info-box
+										span.cpd 25
+										
+										.event-details
+											h3 Daily Updates
+											h4 NewZealand
+											.event-time
+												span.icon 
+													i.material-icons access_time 
+												| 05:00 PM
+		
+					
+		include includes/_create-event-modal
+		
+		include includes/_event-details-modal
+		
+		include includes/_scripts
+
+
+
+

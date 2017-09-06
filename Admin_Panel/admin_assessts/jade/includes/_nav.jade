@@ -1,0 +1,36 @@
+nav(role="navigation").navbar.navbar-default
+	
+	.navbar-header
+		button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+			span.sr-only Toggle navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		a(href="#" ).navbar-brand
+			img.img-responsive(src="img/logo.png", alt="")
+	.collapse.navbar-collapse.navbar-ex1-collapse
+		ul.nav.navbar-nav 
+			li.active: a(href="index.html")
+				span.icon
+					i.material-icons update
+				|Event Requests
+			li: a(href="manage-organisers.html") 
+				span.icon
+					i.material-icons add_alarm
+				|Manage Organisers
+			li: a(href="manage-organisations.html") 
+				span.icon
+					i.material-icons business
+				|Manage Organisation
+			li: a(href="report.html") 
+				span.icon
+					i.material-icons graphic_eq
+				|Report
+			
+		
+		ul.nav.navbar-nav.navbar-right
+			li: a(href="#")#sidebar-toggle 
+				span.icon
+					i.material-icons account_circle
+				|John Doe
+				i.material-icons menu
